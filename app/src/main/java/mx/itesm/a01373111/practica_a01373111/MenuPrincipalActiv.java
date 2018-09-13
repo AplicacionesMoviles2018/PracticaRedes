@@ -1,5 +1,6 @@
 package mx.itesm.a01373111.practica_a01373111;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -82,6 +83,8 @@ public class MenuPrincipalActiv extends AppCompatActivity
 
         if (id == R.id.nav_texto) {
             // Handle the camera action
+            Intent downloadText =  new Intent(this, DownloadTextActivity.class);
+            startActivity(downloadText);
         } else if (id == R.id.nav_imagen) {
 
         } else if (id == R.id.nav_libros) {
